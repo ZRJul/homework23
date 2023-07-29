@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework 19</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<section class="one" id="allProducts">
+
+    <div class="categories">
+        <h4>Категорія товару</h4>
+        <ul>
+            <li class="category" onclick="showProducts('category1')">Категорія 1</li>
+            <li class="category" onclick="showProducts('category2')">Категорія 2</li>
+            <li class="category" onclick="showProducts('category3')">Категорія 3</li>
+        </ul>
+    </div>
+
+    <div class="products">
+        <h4>Перелік товару</h4>
+        <ul id="productList"></ul>
+    </div>
+
+    <div class="product-info">
+        <h4>Інформація про товар</h4>
+        <h5 id="productName"></h5>
+        <p id="productDescription"></p>
+        <button id="buyButton" onclick="buyProduct()">Купити</button>
+    </div>
+
+</section>
+
+<section class="buttonZone">
+    <button id="ordersButton" onclick="showMyOrders()">Мої замовлення</button>
+    <div id="myOrders">
+
+    </div>
+    <button id="enter" onclick="showCategories()">Назад</button>
+</section>
+
+<section class="two">
+    <div id="orderForm">
+        <h2>Форма оформлення замовлення</h2>
+        <form>
+            <div class="field_name">
+                <label for="fullName">ПІБ покупця:</label>
+                <input type="text" id="fullName" required>
+            </div>
+
+            <div class="field_address">
+                <label for="city">Місто:</label>
+                <select id="city" required>
+                    <option value="">Виберіть місто</option>
+                    <option value="Київ">Київ</option>
+                    <option value="Львів">Львів</option>
+                    <option value="Одеса">Одеса</option>
+                </select>
+            </div>
+
+            <div class="field_post">
+                <label for="delivery">Склад Нової пошти для надсилання:</label>
+                <input type="text" id="delivery" required>
+            </div>
+
+            <div class="field_payment">
+                <label for="payment">Спосіб оплати:</label>
+                <select id="payment" required>
+                    <option value="">Виберіть спосіб оплати</option>
+                    <option value="Післяплата">Післяплата</option>
+                    <option value="Банківська">Банківська карта</option>
+                </select>
+            </div>
+
+            <div class="field_quantity">
+                <label for="quantity">Кількість продукції, що купується:</label>
+                <input type="number" id="quantity" required>
+            </div>
+
+
+            <div class="field_comment">
+                <label for="comment">Коментар до замовлення:</label><br>
+                <textarea id="comment"></textarea>
+            </div>
+
+            <button type="submit" id="submit">Підтвердити замовлення</button>
+        </form>
+    </div>
+
+    <div id="errorContainer"></div>
+
+    <div id="orderConfirmation">
+        <h2>Інформація про замовлення</h2>
+        <p id="productDetails"></p>
+        <p id="deliveryDetails"></p>
+    </div>
+</section>
+
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
+

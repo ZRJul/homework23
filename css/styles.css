@@ -1,0 +1,110 @@
+body {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.one {
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.products {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-info {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.one ul {
+    list-style: none;
+    padding: 0;
+}
+
+.one ul li {
+    margin-bottom: 5px;
+}
+
+.one .product-info h5 {
+    margin: 0;
+}
+
+.one .product-info p {
+    margin: 10px;
+}
+
+#buyButton {
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+    margin: 0 auto;
+}
+
+#myOrders{
+    display: none;
+}
+
+.buttonZone {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#ordersButton {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: darkgray;
+}
+
+#enter {
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.two {
+    text-align: center;
+}
+
+#orderForm {
+    display: none;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+.field_comment {
+    display: flex;
+    justify-content: center;
+}
+
+#orderConfirmation {
+    display: none;
+}
+
+.order{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deleteButton {
+    border-radius: 5px;
+}
+
